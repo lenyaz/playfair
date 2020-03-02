@@ -113,5 +113,5 @@ int main( int argc, char* argv[] )
     cout << "Enter a en/decryption key: "; getline( cin, key ); 
     cout << "I <-> J (Y/N): "; getline( cin, i ); ij = ( i[0] == 'y' || i[0] == 'Y' );
     cout << "Enter the text: "; getline( cin, txt ); 
-    playfair pf; pf.doIt( key, txt, ij, e ); return system( "pause" );
+    playfair pf; pf.doIt( key, txt, ij, e ); return getchar();
 }
